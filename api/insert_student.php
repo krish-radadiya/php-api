@@ -14,7 +14,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 
     $res = $config->insertStudent($name, $age, $course);
-    
 
     if ($res) {
         $arr['data'] = "Data inserted Successfully...";

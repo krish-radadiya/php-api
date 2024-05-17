@@ -9,12 +9,11 @@ $config = new Config();
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $name = $_POST['name'];
-    $city = $_POST['city'];
-    $std = $_POST['std'];
-    $num = $_POST['num'];
+    $age = $_POST['age'];
 
 
-    $res = $config->insertSchool($name, $city, $std,$num);
+    $res = $config->insertEmployee($name, $age);
+    
 
     if ($res) {
         $arr['data'] = "Data inserted Successfully...";
