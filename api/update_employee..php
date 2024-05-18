@@ -33,4 +33,3 @@ echo json_encode($arr);
 ?>
 
 
-<!-- WAMP,LAMP,MAMP XAMMP -->

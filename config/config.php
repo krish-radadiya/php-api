@@ -143,15 +143,15 @@ class config{
             return false;
         }
     }
-    public function updateSchool($name, $city,$std,$num, $id)
+    public function updateSchool($name,$city,$std,$num, $id)
     {
         $this->connect();
 
-        $fetch = $this->fetchSingleStudentData($id);
+        $fetch = $this->fetchSingleschoolData($id);
         $result = mysqli_fetch_assoc($fetch);
 
         if ($result) {
-            $query = "UPDATE $this->student SET name='$name',city=$city,std = '$std',num = '$num' WHERE id=$id;";
+            $query = "UPDATE $this->school SET name='$name',city='$city',std = $std,num ='$num 'WHERE id=$id;";
 
             $res = mysqli_query($this->connect, $query);//  return bool;
 
@@ -164,11 +164,12 @@ class config{
     {
         $this->connect();
 
-        $fetch = $this->fetchSingleStudentData($id);
+        $fetch = $this->fetchSingleemployeeData($id);
         $result = mysqli_fetch_assoc($fetch);
 
         if ($result) {
-            $query = "UPDATE $this->student SET name='$name',age=$age WHERE id=$id;";
+
+            $query = "UPDATE $this->employee SET name='$name',age=$age WHERE id=$id;";
 
             $res = mysqli_query($this->connect, $query);//  return bool;
 
@@ -176,6 +177,36 @@ class config{
         } else {
             return false;
         }
+    }
+    public function fetchStudent()
+    {
+        $this->connect();
+
+        $query = "SELECT * FROM $this->student;";
+
+        $res = mysqli_query($this->connect, $query); 
+
+        return $res;
+    }
+    public function fetchEmployee()
+    {
+        $this->connect();
+
+        $query = "SELECT * FROM $this->employee;";
+
+        $res = mysqli_query($this->connect, $query); 
+
+        return $res;
+    }
+    public function fetchSchool()
+    {
+        $this->connect();
+
+        $query = "SELECT * FROM $this->school;";
+
+        $res = mysqli_query($this->connect, $query); 
+
+        return $res;
     }
 }
 

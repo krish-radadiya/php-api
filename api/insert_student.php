@@ -3,7 +3,7 @@
 header("Access-Control-Allow-Methods: POST");
 header("Content-Type: application/json");
 
-include "../config.php";
+include "../config/config.php";
 
 $config = new Config();
 

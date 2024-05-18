@@ -32,6 +32,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'PUT' || $_SERVER['REQUEST_METHOD'] == 'PATCH'
 echo json_encode($arr);
 
 ?>
-
-
-<!-- WAMP,LAMP,MAMP XAMMP -->
