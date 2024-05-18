@@ -1,3 +1,8 @@
+
+PHP (🌐 Hypertext Preprocessor) is a popular server-side scripting language designed for web development. 🖥️ It can be embedded into HTML and is commonly used to create dynamic web pages and applications. 📄 PHP scripts are executed on the server, and the result is sent to the client's web browser. 🌍 PHP is known for its ease of use, extensive support for databases 🗄️, and robust community 👥. It also supports building APIs (Application Programming Interfaces) to enable communication between different software applications, often using REST (Representational State Transfer) or SOAP (Simple Object Access Protocol) protocols. 🔗📡
+
+=============================== Screen Shots ===============================
+
 ![Screenshot (18)](https://github.com/krish-radadiya/php-api/assets/113992828/8c40b553-2616-497c-8cc6-b0cb85858799)
 ![Screenshot (19)](https://github.com/krish-radadiya/php-api/assets/113992828/c102ffc3-d365-4cb3-88a6-fb8770721abf)
 ![Screenshot (20)](https://github.com/krish-radadiya/php-api/assets/113992828/f3741761-a01c-4891-b05a-5bbf26a65db0)
